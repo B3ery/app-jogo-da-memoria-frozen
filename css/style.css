@@ -73,12 +73,11 @@
   button,
   button:focus {
     outline: none;
-    border-color:#005BC5;  
-    box-shadow: 0 0 0 3px #01346e;
+    box-shadow: 0 0 0 3px #2f97de;
   }
     
   button:hover{
-  background-color:#00B4FC ;
+  background-color:#99dfff;
    }
 
   img{
