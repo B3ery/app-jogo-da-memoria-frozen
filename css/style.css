@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    background-image: url("../img/fundo.jpg");
+  }
+  
+  .container{
+    display: grid; 
+    grid-template-columns:  1rf 2rf 1rf ;
+    grid-template-rows: repeat(5,150px); 
+    gap: 10px; 
+    grid-template-areas: 'title title title' 
+                         '. result .' 
+                         'aside cartas content' 
+                         'aside cartas content' 
+                         'button button button'
+  
+  }
+  .result{
+    border-radius: 10px;
+    background-color: #0b7fd3;
+    color: white;
+    display: flex;
+    grid-area: result;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  h1{
+    font-size: 70px;
+    padding-top: 5%;
+    grid-area: title;
+    text-align: center;
+    color: #001423;
+  }
+  h2{
+    margin: 5%;
+    flex-direction: row;
+  }
+  .main{
+    position: relative;
+    grid-area: cartas;
+    display: flex;
+  }
+  .grid {
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .button-ren{
+   grid-area: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button{
+    width: 10%;
+    height: 20%;
+    background-color: #0b7fd3;
+    color: white;
+    border: none;
+  }
+ 
+  button,
+  button:focus {
+    outline: none;
+    border-color:#005BC5;  
+    box-shadow: 0 0 0 3px #01346e;
+  }
+    
+  button:hover{
+  background-color:#00B4FC ;
+   }
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
