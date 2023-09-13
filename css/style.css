@@ -85,3 +85,8 @@
     height: 100px;
   }
 
+  img:hover{
+    transform: rotateY(150deg);
+    transition: 1.2s;
+     }
+
